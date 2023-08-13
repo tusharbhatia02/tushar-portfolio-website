@@ -1,9 +1,11 @@
+
 "use client";
 
 import React from "react";
 import SectionHeading from "./section-heading";
 import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
+import Link from "next/link";
 
 export default function About() {
   const { ref } = useSectionInView("About");
@@ -17,33 +19,28 @@ export default function About() {
       transition={{ delay: 0.175 }}
       id="about"
     >
-      <SectionHeading>About me</SectionHeading>
-      <p className="mb-3">
-        After graduating with a degree in{" "}
-        <span className="font-medium">Accounting</span>, I decided to pursue my
-        passion for programming. I enrolled in a coding bootcamp and learned{" "}
-        <span className="font-medium">full-stack web development</span>.{" "}
-        <span className="italic">My favorite part of programming</span> is the
-        problem-solving aspect. I <span className="underline">love</span> the
-        feeling of finally figuring out a solution to a problem. My core stack
-        is{" "}
-        <span className="font-medium">
-          React, Next.js, Node.js, and MongoDB
-        </span>
-        . I am also familiar with TypeScript and Prisma. I am always looking to
-        learn new technologies. I am currently looking for a{" "}
-        <span className="font-medium">full-time position</span> as a software
-        developer.
-      </p>
+      <SectionHeading>About Me</SectionHeading>
+      <div className="mt-6 prose prose-lg">
+        <p className="mb-6">
+          Hey there, I'm <span className="font-semibold">Tushar Bhatia</span>, a Computer Science enthusiast with a knack for transforming lines of code into captivating digital experiences. As a student and creator, I thrive on challenges and revel in the ever-evolving world of technology.
+        </p>
 
-      <p>
-        <span className="italic">When I'm not coding</span>, I enjoy playing
-        video games, watching movies, and playing with my dog. I also enjoy{" "}
-        <span className="font-medium">learning new things</span>. I am currently
-        learning about{" "}
-        <span className="font-medium">history and philosophy</span>. I'm also
-        learning how to play the guitar.
-      </p>
+        <p className="mb-6">
+          My journey started with the excitement of solving puzzles through programming, and it has evolved into a deep passion for crafting seamless web applications. From breathing life into intricate designs to meticulously optimizing user interfaces, I find joy in every facet of the development process.
+        </p>
+
+        <p className="mb-6">
+          With a rock-solid foundation in languages like Python, Java, and JavaScript, I've honed my skills in both front-end and back-end development. My journey has led me to delve into cutting-edge frameworks like React and Next.js, allowing me to bring ideas to life in the digital realm.
+        </p>
+
+        <p className="mb-6">
+          The satisfaction of solving complex problems is what fuels my curiosity. As a perpetual learner, I'm continuously inspired by the endless possibilities that the tech world offers. Beyond coding, I'm a proponent of collaboration, a problem solver at heart, and a believer in the elegance of solutions.
+        </p>
+
+        <p className="mb-6">
+          Join me as I continue to explore, innovate, and forge meaningful connections through code. Let's embark on a journey of limitless creativity!
+        </p>
+      </div>
     </motion.section>
   );
 }

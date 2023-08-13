@@ -33,3 +33,5 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+RESEND_API_KEY = re_QeQ1mcb8_FvYhynymaeGn8i9DDbdEfW5y

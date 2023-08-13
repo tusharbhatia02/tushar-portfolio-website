@@ -1,10 +1,9 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import carpricepredictor from "@/public/carpricepredictor.png"
+import Mirae from "@/public/Mirae.png"
+import cytoui from "@/public/cytoui.jpg"
 
 export const links = [
   {
@@ -35,73 +34,85 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "BTech. in Computer Science, GGSIPU",
+    location: "Delhi, India",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+      "Pursuing Bachelors of Technology in Computer Science & Engineering, currently in my final year.",
     icon: React.createElement(LuGraduationCap),
-    date: "2019",
+    date: "Expected 2024",
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
+    title: "Software Research Intern, IIIT Delhi",
+    location: "New Delhi, India",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+      "Worked as a software developer intern. Assisted in the development and Deployment of advance deep learning algorithms. Developed SaaS-based web app for visualization flow-cytometry data for research purposes.",
     icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+    date: "May 2023 - July 2023",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
+    title: "Apprentice, Allsoft Solutions",
+    location: "Remote",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
+      "Received comprehensive training in AI technologies, including Python, OpenCV, NLP, and Deep Learning.Worked on an industry-grade machine learning project, gaining hands-on experience in developing practical solutions.",
+    icon: React.createElement(CgWorkAlt),
+    date: "June 2022 - Aug 2022",
   },
+  {
+    title:"Data Science & Analytics Intern, The Sparks Foundation",
+    location: "Remote",
+    description: "Developed machine learning and data analytics models to extract insights and make predictions based on real-world datasets.",
+    icon: React.createElement(CgWorkAlt),
+    date:"Sept 2021 - oct 2021",
+  }
 ] as const;
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "CytoUI",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+      "I worked as a software developer intern at IIIT Delhi, where I worked in development of CytoUI, which is a flow cytometry tool used to visualize flow cytometry data.",
+    tags: ["React", "Next.js", "JavaScript", "Redux", "MongoDB", "TailwindCSS", "Prisma", "FastAPI"],
+    imageUrl: cytoui,
+    projectlink:"https://github.com/tusharbhatia2002/cytoUI_T",
   },
   {
-    title: "rmtDev",
+    title: "Mirae.ai",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
+      "Front-end prototype website devloped as a part of Internship project.",
+    tags: ["Next.js", "TypeScript", "ChakraUI", "Google Analytics"],
+    imageUrl: Mirae,
+    projectlink:"https://main.d1eli87l6v7xbr.amplifyapp.com",
   },
   {
-    title: "Word Analytics",
+    title: "Car Price Predictor",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+      "ML-based web application utilizing Flask, HTML, and CSS to accurately predict the selling price of used cars based on user input.",
+    tags: ["HTML", "CSS", "Python", "Flask", "machine Learning"],
+    imageUrl: carpricepredictor,
+    projectlink:"https://github.com/tusharbhatia2002/Car_Price_Prediction_App",
   },
 ] as const;
 
 export const skillsData = [
-  "HTML",
-  "CSS",
+  "Python",
   "JavaScript",
   "TypeScript",
+  "Java",
+  "CSS",
   "React",
   "Next.js",
   "Node.js",
   "Git",
-  "Tailwind",
+  "TailwindCSS",
   "Prisma",
   "MongoDB",
   "Redux",
-  "GraphQL",
-  "Apollo",
-  "Express",
+  "Tensorflow",
+  "Scikit-Learn",
+  "Flask",
+  "MySQL",
   "PostgreSQL",
-  "Python",
+  "MongoDB",
   "Django",
   "Framer Motion",
 ] as const;
