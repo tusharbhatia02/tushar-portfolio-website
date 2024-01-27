@@ -4,6 +4,9 @@ import { LuGraduationCap } from "react-icons/lu";
 import carpricepredictor from "@/public/carpricepredictor.png"
 import Mirae from "@/public/Mirae.png"
 import cytoui from "@/public/cytoui.jpg"
+import DERMIDimage from "@/public/DERMIDimage.png"
+import AutoSQL from "@/public/AutoSQL.png"
+import Dashboard from "@/public/Dashboard.png"
 
 export const links = [
   {
@@ -50,6 +53,14 @@ export const experiencesData = [
     date: "May 2023 - July 2023",
   },
   {
+    title: "Vice-Chairperson at GeeksForGeeks-Student Chapter",
+    location: "New Delhi, India",
+    description:
+      "Managed a team of 8 members, organized various technical events and hackathons in the college.",
+    icon: React.createElement(CgWorkAlt),
+    date: "March 2022 - April 2023",
+  },
+  {
     title: "Apprentice, Allsoft Solutions",
     location: "Remote",
     description:
@@ -68,6 +79,14 @@ export const experiencesData = [
 
 export const projectsData = [
   {
+    title: "DERM-ID",
+    description:
+      "ML-based SaaS web application utilizing JavaScript, Next.JS, Python, Tensorflow, and Flask for preliminary diagnosis of dermatological diseases through image uploading.",
+    tags: ["JavaScript", "Next.Js", "TailwindCSS", "Python", "Tensorflow", "Flask"],
+    imageUrl: DERMIDimage,
+    projectlink:"https://github.com/tusharbhatia2002/DERMID",
+  },
+  {
     title: "CytoUI",
     description:
       "I worked as a software developer intern at IIIT Delhi, where I worked in development of CytoUI, which is a flow cytometry tool used to visualize flow cytometry data.",
@@ -76,12 +95,28 @@ export const projectsData = [
     projectlink:"https://github.com/tusharbhatia2002/cytoUI_T",
   },
   {
-    title: "Mirae.ai",
+    title: "Auto-SQL Query Generator",
     description:
-      "Front-end prototype website devloped as a part of Internship project.",
-    tags: ["Next.js", "TypeScript", "ChakraUI", "Google Analytics"],
+      "End-to-end LLM application using Google Gemini Pro to generate SQL queries from text and retrieve queries from SQL database",
+    tags: ["Python", "Streamlit", "LLM", "Google Gemini Pro", "SQlite"],
+    imageUrl: AutoSQL,
+    projectlink:"https://auto-sql-query-genartor.streamlit.app/",
+  },
+  {
+    title: "MIX.ai",
+    description:
+      "Front-end prototype website devloped with AI-pwered chatbot as a part of Internship project.",
+    tags: ["Next.js", "TypeScript", "ChakraUI", "Google Analytics", "OpenAI API"],
     imageUrl: Mirae,
     projectlink:"https://main.d1eli87l6v7xbr.amplifyapp.com",
+  },
+  {
+    title: "E-Commerce CMS",
+    description:
+      "Full-stack Content Management System Dashboard web application for managing ecommerce stores",
+    tags: ["Next.js", "TypeScript", "shadcn UI", "MongoDB"],
+    imageUrl: Dashboard,
+    projectlink:"https://github.com/tusharbhatia2002/ECommerce-CMS-Dashboard",
   },
   {
     title: "Car Price Predictor",
